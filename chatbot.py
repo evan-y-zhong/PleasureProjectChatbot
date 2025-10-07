@@ -1,7 +1,5 @@
 import openai
 
-openai.api_key = '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'
-
 def train_chatbot(training_text):
     messages = [
         {"role": "system", "content": training_text}
@@ -151,4 +149,5 @@ while True:
         break
     bot_response = chat_with_bot(messages, user_input)
     print(f"Bot: {bot_response}")
+
     
